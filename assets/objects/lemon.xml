@@ -1,0 +1,11 @@
+<mujoco model="lemon">
+
+  <asset>
+    <mesh name="lemon_visual_mesh" file="objects/lemon/textured.obj" />
+    <mesh name="lemon_collision_mesh_0" file="objects/lemon/textured_coacd_0.stl" />
+    <mesh name="lemon_collision_mesh_1" file="objects/lemon/textured_coacd_1.stl" />
+    <texture name="lemon_texture" type="2d" file="objects/lemon/texture_map.png" />
+    <material name="lemon_material" texture="lemon_texture" />
+  </asset>
+
+</mujoco>

@@ -1,0 +1,81 @@
+<mujoco>
+    <include file="robots/aloha/scene.xml"/>
+    <include file="robots/aloha/vx300s_dependencies.xml"/>
+
+    <include file="objects/apple.xml"/>
+    <include file="objects/lemon.xml"/>
+    <include file="objects/orange.xml"/>
+    <include file="objects/peach.xml"/>
+
+    <worldbody>
+        <include file="robots/aloha/vx300s_left.xml" />
+        <include file="robots/aloha/vx300s_right.xml" />
+
+        <body name="apple" pos="0.15 0.45 0.05" euler="0 0 0">
+            <freejoint name="apple_joint" />
+            <geom name="apple_visual_geom" type="mesh" mesh="apple_visual_mesh" material="apple_material" pos="0.0 -0.0 0.0" euler="0 0 0" contype="0" conaffinity="0" group="0" />
+            <geom name="apple_collision_geom_0" type="mesh" mesh="apple_collision_mesh_0" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" condim="6" friction="2.5 0.2 0.2" />
+            <geom name="apple_collision_geom_1" type="mesh" mesh="apple_collision_mesh_1" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" condim="6" friction="2.5 0.2 0.2" />
+            <geom name="apple_collision_geom_2" type="mesh" mesh="apple_collision_mesh_2" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" />
+            <geom name="apple_collision_geom_3" type="mesh" mesh="apple_collision_mesh_3" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" />
+            <geom name="apple_collision_geom_4" type="mesh" mesh="apple_collision_mesh_4" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" />
+            <inertial pos="0 0 0" euler="0 0 0" mass="0.033" diaginertia="0.001 0.001 0.001" />
+        </body>
+
+        <body name="lemon" pos="0.25 0.45 0.05" euler="0 0 0">
+            <freejoint name="lemon_joint" />
+            <geom name="lemon_visual_geom" type="mesh" mesh="lemon_visual_mesh" material="lemon_material" pos="0.0 -0.0 0.0" euler="0 0 0" contype="0" conaffinity="0" group="0" />
+            <geom name="lemon_collision_geom_0" type="mesh" mesh="lemon_collision_mesh_0" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" condim="6" friction="2.5 0.2 0.2" />
+            <geom name="lemon_collision_geom_1" type="mesh" mesh="lemon_collision_mesh_1" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" condim="6" friction="2.5 0.2 0.2" />
+            <inertial pos="0 0 0" euler="0 0 0" mass="0.033" diaginertia="0.001 0.001 0.001" />
+        </body>
+
+        <body name="orange" pos="0.15 0.55 0.05" euler="0 0 0">
+            <freejoint name="orange_joint" />
+            <geom name="orange_visual_geom" type="mesh" mesh="orange_visual_mesh" material="orange_material" pos="0.0 -0.0 0.0" euler="0 0 0" contype="0" conaffinity="0" group="0" />
+            <geom name="orange_collision_geom_0" type="mesh" mesh="orange_collision_mesh_0" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" condim="6" friction="2.5 0.2 0.2" />
+            <geom name="orange_collision_geom_1" type="mesh" mesh="orange_collision_mesh_1" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" condim="6" friction="2.5 0.2 0.2" />
+            <geom name="orange_collision_geom_2" type="mesh" mesh="orange_collision_mesh_2" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" />
+            <inertial pos="0 0 0" euler="0 0 0" mass="0.033" diaginertia="0.001 0.001 0.001" />
+        </body>
+
+        <body name="peach" pos="0.25 0.55 0.05" euler="0 0 0">
+            <freejoint name="peach_joint" />
+            <geom name="peach_visual_geom" type="mesh" mesh="peach_visual_mesh" material="peach_material" pos="0.0 -0.0 0.0" euler="0 0 0" contype="0" conaffinity="0" group="0" />
+            <geom name="peach_collision_geom_0" type="mesh" mesh="peach_collision_mesh_0" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" condim="6" friction="2.5 0.2 0.2" />
+            <geom name="peach_collision_geom_1" type="mesh" mesh="peach_collision_mesh_1" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" condim="6" friction="2.5 0.2 0.2" />
+            <geom name="peach_collision_geom_2" type="mesh" mesh="peach_collision_mesh_2" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" />
+            <geom name="peach_collision_geom_3" type="mesh" mesh="peach_collision_mesh_3" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" />
+            <geom name="peach_collision_geom_4" type="mesh" mesh="peach_collision_mesh_4" pos="0.0 -0.0 0.0" euler="0 0 0" contype="1" conaffinity="1" group="3" />
+            <inertial pos="0 0 0" euler="0 0 0" mass="0.033" diaginertia="0.001 0.001 0.001" />
+        </body>
+
+    </worldbody>
+
+    <actuator>
+        <position ctrllimited="true" ctrlrange="-3.14158 3.14158" joint="vx300s_left/waist" kp="800"  user="1" forcelimited="true" forcerange="-150 150"/>
+        <position ctrllimited="true" ctrlrange="-1.85005 1.25664" joint="vx300s_left/shoulder" kp="1600"  user="1" forcelimited="true" forcerange="-300 300"/>
+        <position ctrllimited="true" ctrlrange="-1.76278 1.6057" joint="vx300s_left/elbow" kp="800"  user="1" forcelimited="true" forcerange="-100 100"/>
+        <position ctrllimited="true" ctrlrange="-3.14158 3.14158" joint="vx300s_left/forearm_roll" kp="10"  user="1" forcelimited="true" forcerange="-100 100"/>
+        <position ctrllimited="true" ctrlrange="-1.8675 2.23402" joint="vx300s_left/wrist_angle" kp="50"  user="1"/>
+        <position ctrllimited="true" ctrlrange="-3.14158 3.14158" joint="vx300s_left/wrist_rotate" kp="20"  user="1"/>
+        <position ctrllimited="true" ctrlrange="0.021 0.057" joint="vx300s_left/left_finger" kp="200"  user="1"/>
+        <position ctrllimited="true" ctrlrange="-0.057 -0.021" joint="vx300s_left/right_finger" kp="200"  user="1"/>
+
+        <position ctrllimited="true" ctrlrange="-3.14158 3.14158" joint="vx300s_right/waist" kp="800"  user="1" forcelimited="true" forcerange="-150 150"/>
+        <position ctrllimited="true" ctrlrange="-1.85005 1.25664" joint="vx300s_right/shoulder" kp="1600"  user="1" forcelimited="true" forcerange="-300 300"/>
+        <position ctrllimited="true" ctrlrange="-1.76278 1.6057" joint="vx300s_right/elbow" kp="800"  user="1" forcelimited="true" forcerange="-100 100"/>
+        <position ctrllimited="true" ctrlrange="-3.14158 3.14158" joint="vx300s_right/forearm_roll" kp="10"  user="1" forcelimited="true" forcerange="-100 100"/>
+        <position ctrllimited="true" ctrlrange="-1.8675 2.23402" joint="vx300s_right/wrist_angle" kp="50"  user="1"/>
+        <position ctrllimited="true" ctrlrange="-3.14158 3.14158" joint="vx300s_right/wrist_rotate" kp="20"  user="1"/>
+        <position ctrllimited="true" ctrlrange="0.021 0.057" joint="vx300s_right/left_finger" kp="200"  user="1"/>
+        <position ctrllimited="true" ctrlrange="-0.057 -0.021" joint="vx300s_right/right_finger" kp="200"  user="1"/>
+
+    </actuator>
+
+    <keyframe>
+        <key qpos="0 -0.96 1.16 0 -0.3 0 0.024 -0.024  0 -0.96 1.16 0 -0.3 0 0.024 -0.024  0.15 0.45 0.05 1 0 0 0 0.25 0.45 0.05 1 0 0 0 0.15 0.55 0.05 1 0 0 0 0.25 0.55 0.05 1 0 0 0"/>
+    </keyframe>
+
+
+</mujoco>

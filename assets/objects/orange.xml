@@ -1,0 +1,12 @@
+<mujoco model="orange">
+
+  <asset>
+    <mesh name="orange_visual_mesh" file="objects/orange/textured.obj" />
+    <mesh name="orange_collision_mesh_0" file="objects/orange/textured_coacd_0.stl" />
+    <mesh name="orange_collision_mesh_1" file="objects/orange/textured_coacd_1.stl" />
+    <mesh name="orange_collision_mesh_2" file="objects/orange/textured_coacd_2.stl" />
+    <texture name="orange_texture" type="2d" file="objects/orange/texture_map.png" />
+    <material name="orange_material" texture="orange_texture" />
+  </asset>
+
+</mujoco>

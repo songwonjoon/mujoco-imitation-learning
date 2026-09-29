@@ -1,0 +1,13 @@
+<mujoco model="apple">
+
+  <asset>
+    <mesh name="apple_visual_mesh" file="objects/apple/textured.obj" />
+    <mesh name="apple_collision_mesh_0" file="objects/apple/textured_coacd_0.stl" />
+    <mesh name="apple_collision_mesh_1" file="objects/apple/textured_coacd_1.stl" />
+    <mesh name="apple_collision_mesh_2" file="objects/apple/textured_coacd_2.stl" />
+    <mesh name="apple_collision_mesh_3" file="objects/apple/textured_coacd_3.stl" />
+    <mesh name="apple_collision_mesh_4" file="objects/apple/textured_coacd_4.stl" />
+    <texture name="apple_texture" type="2d" file="objects/apple/texture_map.png" />
+    <material name="apple_material" texture="apple_texture" />
+  </asset>
+</mujoco>

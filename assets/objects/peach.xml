@@ -1,0 +1,13 @@
+<mujoco model="peach">
+
+  <asset>
+    <mesh name="peach_visual_mesh" file="objects/peach/textured.obj" />
+    <mesh name="peach_collision_mesh_0" file="objects/peach/textured_coacd_0.stl" />
+    <mesh name="peach_collision_mesh_1" file="objects/peach/textured_coacd_1.stl" />
+    <mesh name="peach_collision_mesh_2" file="objects/peach/textured_coacd_2.stl" />
+    <mesh name="peach_collision_mesh_3" file="objects/peach/textured_coacd_3.stl" />
+    <mesh name="peach_collision_mesh_4" file="objects/peach/textured_coacd_4.stl" />
+    <texture name="peach_texture" type="2d" file="objects/peach/texture_map.png" />
+    <material name="peach_material" texture="peach_texture" />
+  </asset>
+</mujoco>
